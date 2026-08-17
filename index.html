@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavazza Coffee - Premium Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="images/logo/logo.jpg" alt="Lavazza Logo" class="hero-logo">
+            <h1>LAVAZZA</h1>
+            <p class="subtitle">Premium Coffee House</p>
+            <p class="tagline">
+                Sifat • Mazza • Mamnuniyat<br>
+                Har bir yudumda Italiya nafisligi
+            </p>
+        </div>
+        <div class="scroll-down" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav-container" id="menu">
+        <div class="nav-scroll">
+            <button class="nav-btn active" onclick="filterMenu('all', this)">Barchasi</button>
+            <button class="nav-btn" onclick="filterMenu('coffee', this)">☕ Kofe</button>
+            <button class="nav-btn" onclick="filterMenu('iced-coffee', this)">❄️ Sovuq Kofe</button>
+            <button class="nav-btn" onclick="filterMenu('matcha', this)">🍵 Matcha</button>
+            <button class="nav-btn" onclick="filterMenu('lemonades', this)">🍋 Limonadlar</button>
+            <button class="nav-btn" onclick="filterMenu('tea', this)">🫖 Choy</button>
+            <button class="nav-btn" onclick="filterMenu('fresh', this)">🍊 Freshlar</button>
+            <button class="nav-btn" onclick="filterMenu('milk', this)">🥤 Milk Cocktail</button>
+        </div>
+    </nav>
+
+    <!-- ===== COFFEE SECTION ===== -->
+    <section class="section reveal" data-category="coffee">
+        <div class="section-header">
+            <h2>☕ Issiq Kofe</h2>
+            <p>Haqiqiy Italiya kofesi — har bir yudumda zavq</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/coffee/coffees (1).png" alt="Kakao" class="card-image">
+                <div class="card-content">
+                    <h3>Kakao</h3>
+                    <p class="description">Boy va qaynoq shokoladli kakao</p>
+                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">23 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">26 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">31 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">36 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (2).png" alt="Kapuchino" class="card-image">
+                <div class="card-content">
+                    <h3>Kapuchino</h3>
+                    <p class="description">Kremsi ko'pikli klassik kapuchino</p>
+                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">25 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">30 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">34 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">40 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (3).png" alt="Americano" class="card-image">
+                <div class="card-content">
+                    <h3>Americano</h3>
+                    <p class="description">Mazali va tetiklatuvchi americano</p>
+                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">22 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">26 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">30 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">34 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (4).png" alt="Latte" class="card-image">
+                <div class="card-content">
+                    <h3>Latte</h3>
+                    <p class="description">Sutli va yumshoq klassik latte</p>
+                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">25 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">30 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">34 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">40 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (5).png" alt="Flat White" class="card-image">
+                <div class="card-content">
+                    <h3>Flat White</h3>
+                    <p class="description">Qalin ko'pikli avstraliya uslubida</p>
+                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">29 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">35 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (6).png" alt="Lavazza" class="card-image">
+                <span class="badge hit">XIT</span>
+                <div class="card-content">
+                    <h3>Lavazza</h3>
+                    <p class="description">Ushbu kafening maxsus retsepti</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (7).png" alt="Raf" class="card-image">
+                <div class="card-content">
+                    <h3>Raf</h3>
+                    <p class="description">Vanil va qaymoqli klassik raf</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/coffee/coffees (7).png" alt="Raf Honey" class="card-image">
+                <div class="card-content">
+                    <h3>Raf Honey</h3>
+                    <p class="description">Asal bilan boyitilgan raf</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card" style="background: linear-gradient(145deg, #3d2b1f, #1a1208);">
+                <img src="images/coffee/coffees (8).png" alt="issiq chocolate" class="card-image">
+                <div class="card-content">
+                    <h3>🍫 Issiq Shokolad</h3>
+                    <p class="description">Boy va quvvat beruvchi issiq shokolad</p>
+                    <div class="single-price">33 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ICED COFFEE SECTION ===== -->
+    <section class="section reveal" data-category="iced-coffee">
+        <div class="section-header">
+            <h2>❄️ Sovuq Kofe</h2>
+            <p>Yozning issiq kunlarida salqinlash uchun</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_1.png" alt="Ice Latte" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Latte</h3>
+                    <p class="description">Muzli sutli klassik latte</p>
+                    <div class="single-price">38 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_2.png" alt="Ice Cappuccino" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Kapuchino</h3>
+                    <p class="description">Muzli kremsi kapuchino</p>
+                    <div class="single-price">38 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_3.png" alt="Ice Flat White" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Flat White</h3>
+                    <p class="description">Muzli qalin ko'pikli flat white</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_4.png" alt="Ice Americano" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Americano</h3>
+                    <p class="description">Muzli tetiklatuvchi americano</p>
+                    <div class="single-price">25 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_5.png" alt="Ice Frappuccino" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Frappuccino</h3>
+                    <p class="description">Muzli blenderlangan frappuccino</p>
+                    <div class="single-price">25 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/ice-coffee/ice-coffee_6.png" alt="Bumble" class="card-image">
+                <span class="badge hit">XIT</span>
+                <div class="card-content">
+                    <h3>Bambul</h3>
+                    <p class="description">Apelsin sharbatli maxsus kofe</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MATCHA SECTION ===== -->
+    <section class="section reveal" data-category="matcha">
+        <div class="section-header">
+            <h2>🍵 Matcha Menyu</h2>
+            <p>Yaponiyaning foydali yashil choyidan tayyorlangan</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/matcha/matcha_1.png" alt="Strawberry Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Klubnika Matcha</h3>
+                    <p class="description">Yong'oq va klubnika bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_2.png" alt="Mango Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Mango Matcha</h3>
+                    <p class="description">Mango bo'lakchalari bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_3.png" alt="Ice Matcha Latte" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Matcha Latte</h3>
+                    <p class="description">Muzli sutli matcha latte</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_4.png" alt="Cherry Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Vishnya Matcha</h3>
+                    <p class="description">Mazali vishnya bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_5.png" alt="Bumble Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Bambul Matcha</h3>
+                    <p class="description">Apelsin sharbatli matcha</p>
+                    <div class="single-price">50 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_6.png" alt="Tonic Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Tonic Matcha</h3>
+                    <p class="description">Limon va tonik bilan</p>
+                    <div class="single-price">50 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_7.png" alt="Matcha Latte" class="card-image">
+                <div class="card-content">
+                    <h3>Matcha Latte</h3>
+                    <p class="description">Klassik issiq matcha latte</p>
+                    <div class="single-price">30 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_8.png" alt="Lotus Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Lotus Matcha</h3>
+                    <p class="description">Lotus pirojni bilan</p>
+                    <div class="single-price">50 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_9.png" alt="Mint Grapefruit Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Myat Greyfrut</h3>
+                    <p class="description">Yalpiz va greyfrut bilan</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_10.png" alt="Banana Penka Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Bananoviy Penka</h3>
+                    <p class="description">Banan va karamell bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_11.png" alt="Ube Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Ube Matcha</h3>
+                    <p class="description">Filippin yamsi bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_12.png" alt="Mont Blanc Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Mont Blank</h3>
+                    <p class="description">Kastan'ye kremi bilan</p>
+                    <div class="single-price">45 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_13.png" alt="Grape Peach Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Vinograd Persik</h3>
+                    <p class="description">Uzum va shaftoli bilan</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_14.png" alt="Strawberry Grapefruit Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Klubnika Greyfrut</h3>
+                    <p class="description">Klubnika va greyfrut kombinatsiyasi</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/matcha/matcha_15.png" alt="Mango Passion Matcha" class="card-image">
+                <div class="card-content">
+                    <h3>Mango Marakuya</h3>
+                    <p class="description">Mango va marakuya bilan</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEMONADES SECTION ===== -->
+    <section class="section reveal" data-category="lemonades">
+        <div class="section-header">
+            <h2>🍋 Limonadlar</h2>
+            <p>Salqin va tetiklatuvchi tabiiy limonadlar</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_1.png" alt="Mojito" class="card-image">
+                <div class="card-content">
+                    <h3>Mojito</h3>
+                    <p class="description">Yalpiz va limon bilan klassik mojito</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_2.png" alt="Iced Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Ays Choy</h3>
+                    <p class="description">Muzli choy limon bilan</p>
+                    <div class="single-price">30 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_3.png" alt="Tarragon" class="card-image">
+                <div class="card-content">
+                    <h3>Tarxun</h3>
+                    <p class="description">Tarxun otli maxsus limonad</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_4.png" alt="Duchess" class="card-image">
+                <div class="card-content">
+                    <h3>Dyushes</h3>
+                    <p class="description">Bezovta olcha aromatli</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_5.png" alt="Mango Passion" class="card-image">
+                <div class="card-content">
+                    <h3>Mango Marakuya</h3>
+                    <p class="description">Mango va marakuya aralashmasi</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/lemonades/lemonades_6.png" alt="Berry" class="card-image">
+                <div class="card-content">
+                    <h3>Yagodniy</h3>
+                    <p class="description">Turli mevalar aralashmasi</p>
+                    <div class="single-price">40 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEA SECTION ===== -->
+    <section class="section reveal" data-category="tea">
+        <div class="section-header">
+            <h2>🫖 Issiq Choylar</h2>
+            <p>Tinchlanish va issiqlik uchun eng yaxshi tanlov</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/tea/tea_1.png" alt="Black Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Qora Choy</h3>
+                    <p class="description">Klassik qora choy</p>
+                    <div class="single-price">10 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/tea/tea_2.png" alt="Berry Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Yagodniy Choy</h3>
+                    <p class="description">Mevali aromatli choy</p>
+                    <div class="single-price">20 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/tea/tea_3.png" alt="Lemon Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Limon Choy</h3>
+                    <p class="description">Limon bilan tetiklatuvchi</p>
+                    <div class="single-price">12 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/tea/tea_4.png" alt="Ginger Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Zanjabil Choy</h3>
+                    <p class="description">Zanjabil va asal bilan</p>
+                    <div class="single-price">20 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/tea/tea_5.png" alt="Orange Tea" class="card-image">
+                <div class="card-content">
+                    <h3>Apelsin Choy</h3>
+                    <p class="description">Apelsin dadi bilan</p>
+                    <div class="single-price">15 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FRESH JUICES SECTION ===== -->
+    <section class="section reveal" data-category="fresh">
+        <div class="section-header">
+            <h2>🍊 Tabiiy Freshlar</h2>
+            <p>100% tabiiy mevalar sharbatlari</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/fresh/fresh_1.png" alt="Orange Fresh" class="card-image">
+                <div class="card-content">
+                    <h3>Apelsin Fresh</h3>
+                    <p class="description">Yangi squeezed apelsin</p>
+                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">35 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">45 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/fresh/fresh_2.png" alt="Apple Fresh" class="card-image">
+                <div class="card-content">
+                    <h3>Olma Fresh</h3>
+                    <p class="description">Yashil olma sharbatli</p>
+                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">20 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">30 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/fresh/fresh_3.png" alt="Carrot Fresh" class="card-image">
+                <div class="card-content">
+                    <h3>Sabzi Fresh</h3>
+                    <p class="description">Foydali sabzi sharbatli</p>
+                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">15 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">25 000 so'm</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/fresh/fresh_4.png" alt="Apple Carrot Fresh" class="card-image">
+                <div class="card-content">
+                    <h3>Olma-Sabzi Fresh</h3>
+                    <p class="description">Olva va sabzi aralashmasi</p>
+                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">20 000 so'm</span></div>
+                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">30 000 so'm</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MILK COCKTAILS SECTION ===== -->
+    <section class="section reveal" data-category="milk">
+        <div class="section-header">
+            <h2>🥤 Milk Cocktail</h2>
+            <p>Mazali va to'yimli sutli kokteyllar</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/milk-cocktails/ChatGPT Image 18 авг. 2026 г., 01_08_31.png" alt="Classic Milkshake" class="card-image">
+                <div class="card-content">
+                    <h3>Klassik Milk Cocktail</h3>
+                    <p class="description">Vanil va sutli klassik</p>
+                    <div class="single-price">35 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/milk-cocktails/milk-cocktails_2.png" alt="Snickers Milkshake" class="card-image">
+                <span class="badge hit">XIT</span>
+                <div class="card-content">
+                    <h3>Snickers Milk Cocktail</h3>
+                    <p class="description">Snickers shokoladli</p>
+                    <div class="single-price">42 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/milk-cocktails/milk-cocktails_3.png" alt="Bounty Milkshake" class="card-image">
+                <div class="card-content">
+                    <h3>Bounty Milk Cocktail</h3>
+                    <p class="description">Kokos va shokoladli</p>
+                    <div class="single-price">42 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/milk-cocktails/milk-cocktails_4.png" alt="Raffaello Milkshake" class="card-image">
+                <div class="card-content">
+                    <h3>Raffaello Milk Cocktail</h3>
+                    <p class="description">Kokos va bodomli</p>
+                    <div class="single-price">42 000 so'm</div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/milk-cocktails/ChatGPT Image 18 авг. 2026 г., 01_07_39.png" alt="Oreo Milk Cocktail" class="card-image">
+                <div class="card-content">
+                    <h3>Oreo Milk Cocktail</h3>
+                    <p class="description">Oreo pechenelari bilan</p>
+                    <div class="single-price">42 000 so'm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADDONS SECTION ===== -->
+    <section class="section reveal" data-category="addons">
+        <div class="section-header">
+            <h2>➕ Qo'shimchalar</h2>
+            <p>Ichimliklaringizni yanada mazali qiling</p>
+        </div>
+        <div class="addons-grid">
+            <div class="addon-card"><span class="addon-name">🥛 Sut</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🥛 Laktozasiz sut</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">☁️ Qaymoq</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🍥 Vzbitiye slivki</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🍯 Sirop</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🍯 Asal</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🌿 Yalpiz</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🍋 Limon</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">☕ Espresso</span><span class="addon-price">22 000 so'm</span></div>
+            <div class="addon-card"><span class="addon-name">🍫 Topping</span><span class="addon-price">6 000 so'm</span></div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <img src="images/logo/logo.jpg" alt="Lavazza" class="footer-logo">
+        <h3>LAVAZZA COFFEE</h3>
+        <p>Sifat • Mazza • Mamnuniyat</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">Ish vaqti: 08:00 - 23:00 | Har kuni</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">Lavazzacoffee.uz</p>
+    </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
