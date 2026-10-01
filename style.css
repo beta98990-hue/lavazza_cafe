@@ -172,19 +172,27 @@
 
         /* ===== SECTION STYLES ===== */
         .section {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
+            padding: 5rem 2rem;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.5s ease;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
         }
 
         .section-header h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             color: var(--gold);
             margin-bottom: 0.5rem;
             position: relative;
@@ -194,25 +202,31 @@
         .section-header h2::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 70px;
             height: 3px;
+            border-radius: 2px;
             background: var(--gold);
         }
 
         .section-header p {
-            color: rgba(245, 240, 232, 0.6);
+            color: rgba(245, 240, 232, 0.7);
             margin-top: 1.5rem;
-            font-size: 1rem;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
         }
 
         /* ===== MENU GRID ===== */
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 2.2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
         }
 
         .menu-card {
@@ -312,37 +326,229 @@
             font-size: 1.3rem;
         }
 
-        /* ===== ADDONS SECTION ===== */
-        .addons-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
+        /* ===== CATEGORY THEMED BACKGROUNDS & ACCENTS ===== */
+
+        /* 1. Hot Coffee: Deep Espresso & Warm Mocha Roastery */
+        .section[data-category="coffee"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(160, 100, 45, 0.22) 0%, transparent 60%),
+                radial-gradient(circle at 10% 85%, rgba(90, 50, 20, 0.18) 0%, transparent 50%),
+                linear-gradient(180deg, #120903 0%, #1a0f06 50%, #120903 100%);
+            border-top: 1px solid rgba(212, 168, 83, 0.15);
+            border-bottom: 1px solid rgba(212, 168, 83, 0.15);
+        }
+        .section[data-category="coffee"] .section-header h2 {
+            color: #f1cf87;
+        }
+        .section[data-category="coffee"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #d4a853, transparent);
+        }
+        .section[data-category="coffee"] .menu-card {
+            background: linear-gradient(145deg, rgba(62, 42, 28, 0.88), rgba(22, 14, 7, 0.96));
+            border-color: rgba(212, 168, 83, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="coffee"] .menu-card:hover {
+            border-color: #d4a853;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(212, 168, 83, 0.22);
         }
 
-        .addon-card {
-            background: linear-gradient(145deg, rgba(61, 43, 31, 0.6), rgba(26, 18, 8, 0.7));
-            border-radius: 15px;
-            padding: 1.2rem;
-            border: 1px solid rgba(212, 168, 83, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
+        /* 2. Iced Coffee: Deep Arctic Glacier & Cool Slate Frost */
+        .section[data-category="iced-coffee"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(35, 110, 175, 0.28) 0%, transparent 60%),
+                radial-gradient(circle at 90% 80%, rgba(20, 70, 120, 0.22) 0%, transparent 50%),
+                linear-gradient(180deg, #06111d 0%, #0d2238 50%, #06111d 100%);
+            border-top: 1px solid rgba(100, 190, 255, 0.22);
+            border-bottom: 1px solid rgba(100, 190, 255, 0.22);
+        }
+        .section[data-category="iced-coffee"] .section-header h2 {
+            color: #7ad1ff;
+            text-shadow: 0 0 25px rgba(122, 209, 255, 0.35);
+        }
+        .section[data-category="iced-coffee"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #54b5f0, transparent);
+        }
+        .section[data-category="iced-coffee"] .menu-card {
+            background: linear-gradient(145deg, rgba(16, 40, 64, 0.88), rgba(6, 17, 28, 0.96));
+            border-color: rgba(122, 209, 255, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="iced-coffee"] .menu-card:hover {
+            border-color: #7ad1ff;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(122, 209, 255, 0.28);
+        }
+        .section[data-category="iced-coffee"] .menu-card h3 {
+            color: #a8e5ff;
+        }
+        .section[data-category="iced-coffee"] .price,
+        .section[data-category="iced-coffee"] .single-price {
+            color: #7ad1ff;
         }
 
-        .addon-card:hover {
-            border-color: var(--gold);
-            transform: scale(1.02);
+        /* 3. Matcha: Ceremonial Kyoto Jade & Botanical Forest */
+        .section[data-category="matcha"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(45, 120, 65, 0.3) 0%, transparent 60%),
+                radial-gradient(circle at 10% 85%, rgba(25, 85, 45, 0.22) 0%, transparent 50%),
+                linear-gradient(180deg, #05150b 0%, #0c2b18 50%, #05150b 100%);
+            border-top: 1px solid rgba(85, 205, 125, 0.22);
+            border-bottom: 1px solid rgba(85, 205, 125, 0.22);
+        }
+        .section[data-category="matcha"] .section-header h2 {
+            color: #92e8a3;
+            text-shadow: 0 0 25px rgba(146, 232, 163, 0.35);
+        }
+        .section[data-category="matcha"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #52b872, transparent);
+        }
+        .section[data-category="matcha"] .menu-card {
+            background: linear-gradient(145deg, rgba(16, 48, 28, 0.88), rgba(5, 21, 11, 0.96));
+            border-color: rgba(85, 205, 125, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="matcha"] .menu-card:hover {
+            border-color: #92e8a3;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(146, 232, 163, 0.28);
+        }
+        .section[data-category="matcha"] .menu-card h3 {
+            color: #c2f9ce;
+        }
+        .section[data-category="matcha"] .price,
+        .section[data-category="matcha"] .single-price {
+            color: #92e8a3;
         }
 
-        .addon-name {
-            font-size: 0.95rem;
-            color: var(--coffee-cream);
+        /* 4. Lemonades: Mediterranean Sunburst & Citrus Glow */
+        .section[data-category="lemonades"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(205, 165, 25, 0.26) 0%, transparent 60%),
+                radial-gradient(circle at 90% 75%, rgba(150, 115, 15, 0.2) 0%, transparent 50%),
+                linear-gradient(180deg, #151102 0%, #2a2205 50%, #151102 100%);
+            border-top: 1px solid rgba(250, 205, 60, 0.22);
+            border-bottom: 1px solid rgba(250, 205, 60, 0.22);
+        }
+        .section[data-category="lemonades"] .section-header h2 {
+            color: #fed95c;
+            text-shadow: 0 0 25px rgba(254, 217, 92, 0.35);
+        }
+        .section[data-category="lemonades"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #e5b931, transparent);
+        }
+        .section[data-category="lemonades"] .menu-card {
+            background: linear-gradient(145deg, rgba(52, 42, 12, 0.88), rgba(20, 16, 3, 0.96));
+            border-color: rgba(250, 205, 60, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="lemonades"] .menu-card:hover {
+            border-color: #fed95c;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(254, 217, 92, 0.28);
+        }
+        .section[data-category="lemonades"] .menu-card h3 {
+            color: #ffea9f;
+        }
+        .section[data-category="lemonades"] .price,
+        .section[data-category="lemonades"] .single-price {
+            color: #fed95c;
         }
 
-        .addon-price {
-            font-weight: 700;
-            color: var(--gold);
+        /* 5. Hot Tea: Artisanal Amber, Cinnamon & Spiced Herbal */
+        .section[data-category="tea"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(175, 75, 25, 0.28) 0%, transparent 60%),
+                radial-gradient(circle at 10% 80%, rgba(120, 50, 15, 0.22) 0%, transparent 50%),
+                linear-gradient(180deg, #150602 0%, #2b1106 50%, #150602 100%);
+            border-top: 1px solid rgba(235, 125, 65, 0.22);
+            border-bottom: 1px solid rgba(235, 125, 65, 0.22);
+        }
+        .section[data-category="tea"] .section-header h2 {
+            color: #f09b69;
+            text-shadow: 0 0 25px rgba(240, 155, 105, 0.35);
+        }
+        .section[data-category="tea"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #c96535, transparent);
+        }
+        .section[data-category="tea"] .menu-card {
+            background: linear-gradient(145deg, rgba(54, 25, 13, 0.88), rgba(19, 8, 3, 0.96));
+            border-color: rgba(235, 125, 65, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="tea"] .menu-card:hover {
+            border-color: #f09b69;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(240, 155, 105, 0.28);
+        }
+        .section[data-category="tea"] .menu-card h3 {
+            color: #ffc9a8;
+        }
+        .section[data-category="tea"] .price,
+        .section[data-category="tea"] .single-price {
+            color: #f09b69;
+        }
+
+        /* 6. Fresh Juices: Sicilian Tangerine & Sunlit Citrus Dusk */
+        .section[data-category="fresh"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(205, 90, 20, 0.28) 0%, transparent 60%),
+                radial-gradient(circle at 90% 85%, rgba(150, 60, 10, 0.22) 0%, transparent 50%),
+                linear-gradient(180deg, #160701 0%, #301304 50%, #160701 100%);
+            border-top: 1px solid rgba(255, 140, 50, 0.22);
+            border-bottom: 1px solid rgba(255, 140, 50, 0.22);
+        }
+        .section[data-category="fresh"] .section-header h2 {
+            color: #ffa859;
+            text-shadow: 0 0 25px rgba(255, 168, 89, 0.35);
+        }
+        .section[data-category="fresh"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #f07b22, transparent);
+        }
+        .section[data-category="fresh"] .menu-card {
+            background: linear-gradient(145deg, rgba(60, 27, 10, 0.88), rgba(21, 9, 2, 0.96));
+            border-color: rgba(255, 140, 50, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="fresh"] .menu-card:hover {
+            border-color: #ffa859;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(255, 168, 89, 0.28);
+        }
+        .section[data-category="fresh"] .menu-card h3 {
+            color: #ffd4a8;
+        }
+        .section[data-category="fresh"] .price,
+        .section[data-category="fresh"] .single-price {
+            color: #ffa859;
+        }
+
+        /* 7. Milk Cocktail: Velvet Strawberry Cream & Chocolate Dessert */
+        .section[data-category="milk"] {
+            background: 
+                radial-gradient(circle at 50% 10%, rgba(155, 60, 155, 0.28) 0%, transparent 60%),
+                radial-gradient(circle at 10% 85%, rgba(105, 35, 105, 0.22) 0%, transparent 50%),
+                linear-gradient(180deg, #140616 0%, #2b0e2f 50%, #140616 100%);
+            border-top: 1px solid rgba(220, 120, 230, 0.22);
+            border-bottom: 1px solid rgba(220, 120, 230, 0.22);
+        }
+        .section[data-category="milk"] .section-header h2 {
+            color: #eda8f5;
+            text-shadow: 0 0 25px rgba(237, 168, 245, 0.35);
+        }
+        .section[data-category="milk"] .section-header h2::after {
+            background: linear-gradient(90deg, transparent, #c466d1, transparent);
+        }
+        .section[data-category="milk"] .menu-card {
+            background: linear-gradient(145deg, rgba(52, 22, 58, 0.88), rgba(19, 7, 21, 0.96));
+            border-color: rgba(220, 120, 230, 0.24);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        }
+        .section[data-category="milk"] .menu-card:hover {
+            border-color: #eda8f5;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(237, 168, 245, 0.28);
+        }
+        .section[data-category="milk"] .menu-card h3 {
+            color: #fbd6ff;
+        }
+        .section[data-category="milk"] .price,
+        .section[data-category="milk"] .single-price {
+            color: #eda8f5;
         }
 
         /* ===== FOOTER ===== */

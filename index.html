@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,8 @@
             <h1>LAVAZZA</h1>
             <p class="subtitle">Premium Coffee House</p>
             <p class="tagline">
-                Sifat • Mazza • Mamnuniyat<br>
-                Har bir yudumda Italiya nafisligi
+                Качество • Вкус • Удовольствие<br>
+                Итальянское изящество в каждом глотке
             </p>
         </div>
         <div class="scroll-down" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
@@ -31,108 +31,138 @@
     <!-- ===== NAVIGATION ===== -->
     <nav class="nav-container" id="menu">
         <div class="nav-scroll">
-            <button class="nav-btn active" onclick="filterMenu('all', this)">Barchasi</button>
-            <button class="nav-btn" onclick="filterMenu('coffee', this)">☕ Kofe</button>
-            <button class="nav-btn" onclick="filterMenu('iced-coffee', this)">❄️ Sovuq Kofe</button>
-            <button class="nav-btn" onclick="filterMenu('matcha', this)">🍵 Matcha</button>
-            <button class="nav-btn" onclick="filterMenu('lemonades', this)">🍋 Limonadlar</button>
-            <button class="nav-btn" onclick="filterMenu('tea', this)">🫖 Choy</button>
-            <button class="nav-btn" onclick="filterMenu('fresh', this)">🍊 Freshlar</button>
-            <button class="nav-btn" onclick="filterMenu('milk', this)">🥤 Milk Cocktail</button>
+            <button class="nav-btn active" onclick="filterMenu('all', this)">Все</button>
+            <button class="nav-btn" onclick="filterMenu('coffee', this)">☕ Кофе</button>
+            <button class="nav-btn" onclick="filterMenu('iced-coffee', this)">❄️ Холодный кофе</button>
+            <button class="nav-btn" onclick="filterMenu('matcha', this)">🍵 Матча</button>
+            <button class="nav-btn" onclick="filterMenu('lemonades', this)">🍋 Лимонады</button>
+            <button class="nav-btn" onclick="filterMenu('tea', this)">🫖 Чай</button>
+            <button class="nav-btn" onclick="filterMenu('fresh', this)">🍊 Фреши</button>
+            <button class="nav-btn" onclick="filterMenu('milk', this)">🥤 Молочный коктейль</button>
         </div>
     </nav>
 
     <!-- ===== COFFEE SECTION ===== -->
     <section class="section reveal" data-category="coffee">
         <div class="section-header">
-            <h2>☕ Issiq Kofe</h2>
-            <p>Haqiqiy Italiya kofesi — har bir yudumda zavq</p>
+            <h2>☕ Горячий кофе</h2>
+            <p>Настоящий итальянский кофе — удовольствие в каждом глотке</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/coffee/coffees (1).png" alt="Kakao" class="card-image">
+                <img src="напитки/кофе/Эспрессо в тёмно-синем стакане Lavazza-1.png" alt="Эспрессо" class="card-image">
                 <div class="card-content">
-                    <h3>Kakao</h3>
-                    <p class="description">Boy va qaynoq shokoladli kakao</p>
-                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">23 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">26 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">31 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">36 000 so'm</span></div>
+                    <h3>Эспрессо</h3>
+                    <p class="description">Настоящий крепкий и ароматный итальянский эспрессо</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">22 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (2).png" alt="Kapuchino" class="card-image">
+                <img src="напитки/кофе/Американо в фирменном стакане LAVAZZA-2.png" alt="Американо" class="card-image">
                 <div class="card-content">
-                    <h3>Kapuchino</h3>
-                    <p class="description">Kremsi ko'pikli klassik kapuchino</p>
-                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">25 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">30 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">34 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">40 000 so'm</span></div>
+                    <h3>Американо</h3>
+                    <p class="description">Вкусный и бодрящий классический американо</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">22 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">26 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">30 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">34 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (3).png" alt="Americano" class="card-image">
+                <img src="напитки/кофе/Капучино в тёмно-синем стакане Lavazza-3.png" alt="Капучино" class="card-image">
                 <div class="card-content">
-                    <h3>Americano</h3>
-                    <p class="description">Mazali va tetiklatuvchi americano</p>
-                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">22 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">26 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">30 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">34 000 so'm</span></div>
+                    <h3>Капучино</h3>
+                    <p class="description">Классический капучино с нежной кремовой пенкой</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">25 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">30 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">34 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">40 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (4).png" alt="Latte" class="card-image">
+                <img src="напитки/кофе/Флэт уайт в чашке Lavazza-4.png" alt="Флэт Уайт" class="card-image">
                 <div class="card-content">
-                    <h3>Latte</h3>
-                    <p class="description">Sutli va yumshoq klassik latte</p>
-                    <div class="price-row"><span class="size-label">200 ml</span><span class="price">25 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">30 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">34 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">40 000 so'm</span></div>
+                    <h3>Флэт Уайт</h3>
+                    <p class="description">В австралийском стиле с густой бархатистой пенкой</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">29 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">35 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (5).png" alt="Flat White" class="card-image">
-                <div class="card-content">
-                    <h3>Flat White</h3>
-                    <p class="description">Qalin ko'pikli avstraliya uslubida</p>
-                    <div class="price-row"><span class="size-label">300 ml</span><span class="price">29 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">400 ml</span><span class="price">35 000 so'm</span></div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="images/coffee/coffees (6).png" alt="Lavazza" class="card-image">
-                <span class="badge hit">XIT</span>
+                <img src="напитки/кофе/Кофе Lavazza в тёмно-синем стакане-5.png" alt="Lavazza" class="card-image">
+                <span class="badge hit">ХИТ</span>
                 <div class="card-content">
                     <h3>Lavazza</h3>
-                    <p class="description">Ushbu kafening maxsus retsepti</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <p class="description">Фирменный авторский рецепт нашей кофейни</p>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">45 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (7).png" alt="Raf" class="card-image">
+                <img src="напитки/кофе/Латте в фирменном стакане Lavazza-6.png" alt="Латте" class="card-image">
                 <div class="card-content">
-                    <h3>Raf</h3>
-                    <p class="description">Vanil va qaymoqli klassik raf</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Латте</h3>
+                    <p class="description">Молочный латте с нежной воздушной пенкой</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">25 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">30 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">34 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">40 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/coffee/coffees (7).png" alt="Raf Honey" class="card-image">
+                <img src="напитки/кофе/Испанский латте в чашке Lavazza-7.png" alt="Испанский Латте" class="card-image">
                 <div class="card-content">
-                    <h3>Raf Honey</h3>
-                    <p class="description">Asal bilan boyitilgan raf</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Испанский Латте</h3>
+                    <p class="description">Нежный сладкий латте со сгущённым молоком</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">25 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">30 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">34 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">40 000 сум</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="напитки/кофе/Раф в фирменном стакане Lavazza-8.png" alt="Раф" class="card-image">
+                <div class="card-content">
+                    <h3>Раф</h3>
+                    <p class="description">Классический нежный раф с ванилью и сливками</p>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">45 000 сум</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="напитки/кофе/Мокко в стакане Lavazza-9.png" alt="Мокко" class="card-image">
+                <div class="card-content">
+                    <h3>Мокко</h3>
+                    <p class="description">Гармония эспрессо, горячего молока и шоколада</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">25 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">30 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">34 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">40 000 сум</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="напитки/кофе/Раф Хани в стакане Lavazza-10.png" alt="Раф Хани" class="card-image">
+                <div class="card-content">
+                    <h3>Раф Хани</h3>
+                    <p class="description">Раф, обогащённый натуральным мёдом и сливками</p>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">45 000 сум</span></div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="напитки/кофе/Горячее какао в стакане Lavazza-11.png" alt="Какао" class="card-image">
+                <div class="card-content">
+                    <h3>Какао</h3>
+                    <p class="description">Насыщенное и горячее шоколадное какао</p>
+                    <div class="price-row"><span class="size-label">200 мл</span><span class="price">23 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">300 мл</span><span class="price">26 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">400 мл</span><span class="price">31 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">36 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card" style="background: linear-gradient(145deg, #3d2b1f, #1a1208);">
-                <img src="images/coffee/coffees (8).png" alt="issiq chocolate" class="card-image">
+                <img src="напитки/кофе/Горячий шоколад в чашке Lavazza-12.png" alt="Горячий шоколад" class="card-image">
                 <div class="card-content">
-                    <h3>🍫 Issiq Shokolad</h3>
-                    <p class="description">Boy va quvvat beruvchi issiq shokolad</p>
-                    <div class="single-price">33 000 so'm</div>
+                    <h3>🍫 Горячий шоколад</h3>
+                    <p class="description">Насыщенный и бодрящий густой горячий шоколад</p>
+                    <div class="single-price">33 000 сум</div>
                 </div>
             </div>
         </div>
@@ -141,57 +171,57 @@
     <!-- ===== ICED COFFEE SECTION ===== -->
     <section class="section reveal" data-category="iced-coffee">
         <div class="section-header">
-            <h2>❄️ Sovuq Kofe</h2>
-            <p>Yozning issiq kunlarida salqinlash uchun</p>
+            <h2>❄️ Холодный кофе</h2>
+            <p>Бодрящие кофейные напитки для освежения в жаркие дни</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_1.png" alt="Ice Latte" class="card-image">
+                <img src="напитки/айс кофе/Айс-латте в стакане Lavazza-30.png" alt="Айс Латте" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Latte</h3>
-                    <p class="description">Muzli sutli klassik latte</p>
-                    <div class="single-price">38 000 so'm</div>
+                    <h3>Айс Латте</h3>
+                    <p class="description">Классический латте на льду с молоком</p>
+                    <div class="single-price">38 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_2.png" alt="Ice Cappuccino" class="card-image">
+                <img src="напитки/айс кофе/Айс капучино в прозрачном стакане-31.png" alt="Айс Капучино" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Kapuchino</h3>
-                    <p class="description">Muzli kremsi kapuchino</p>
-                    <div class="single-price">38 000 so'm</div>
+                    <h3>Айс Капучино</h3>
+                    <p class="description">Нежный кремовый капучино со льдом</p>
+                    <div class="single-price">38 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_3.png" alt="Ice Flat White" class="card-image">
+                <img src="напитки/айс кофе/Айс флэт уайт в стакане Lavazza-32.png" alt="Айс Флэт Уайт" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Flat White</h3>
-                    <p class="description">Muzli qalin ko'pikli flat white</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Айс Флэт Уайт</h3>
+                    <p class="description">Флэт уайт с густой пенкой на льду</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_4.png" alt="Ice Americano" class="card-image">
+                <img src="напитки/айс кофе/Айс американо со льдом-33.png" alt="Айс Американо" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Americano</h3>
-                    <p class="description">Muzli tetiklatuvchi americano</p>
-                    <div class="single-price">25 000 so'm</div>
+                    <h3>Айс Американо</h3>
+                    <p class="description">Бодрящий американо со льдом</p>
+                    <div class="single-price">25 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_5.png" alt="Ice Frappuccino" class="card-image">
+                <img src="напитки/айс кофе/Айс фраппучино с шоколадным топпингом-34.png" alt="Айс Фраппучино" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Frappuccino</h3>
-                    <p class="description">Muzli blenderlangan frappuccino</p>
-                    <div class="single-price">25 000 so'm</div>
+                    <h3>Айс Фраппучино</h3>
+                    <p class="description">Блендированный фраппучино с шоколадным топпингом</p>
+                    <div class="single-price">42 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/ice-coffee/ice-coffee_6.png" alt="Bumble" class="card-image">
-                <span class="badge hit">XIT</span>
+                <img src="напитки/айс кофе/Апельсиновый бамбл с эспрессо-35.png" alt="Бамбл" class="card-image">
+                <span class="badge hit">ХИТ</span>
                 <div class="card-content">
-                    <h3>Bambul</h3>
-                    <p class="description">Apelsin sharbatli maxsus kofe</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Бамбл</h3>
+                    <p class="description">Особый бодрящий кофе с апельсиновым соком</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
         </div>
@@ -200,128 +230,128 @@
     <!-- ===== MATCHA SECTION ===== -->
     <section class="section reveal" data-category="matcha">
         <div class="section-header">
-            <h2>🍵 Matcha Menyu</h2>
-            <p>Yaponiyaning foydali yashil choyidan tayyorlangan</p>
+            <h2>🍵 Матча меню</h2>
+            <p>Премиальные напитки из натурального японского зелёного чая</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/matcha/matcha_1.png" alt="Strawberry Matcha" class="card-image">
+                <img src="напитки/матча/Клубничная матча в стакане Lavazza-1.png" alt="Клубника Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Klubnika Matcha</h3>
-                    <p class="description">Yong'oq va klubnika bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Клубника Матча</h3>
+                    <p class="description">Свежая клубника с нежными молочными слоями</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_2.png" alt="Mango Matcha" class="card-image">
+                <img src="напитки/матча/Слоёная манго-матча с кубиками манго-2.png" alt="Манго Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Mango Matcha</h3>
-                    <p class="description">Mango bo'lakchalari bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Манго Матча</h3>
+                    <p class="description">Со сладкими кусочками спелого манго</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_3.png" alt="Ice Matcha Latte" class="card-image">
+                <img src="напитки/матча/Айс матча латте с кубиками льда-3.png" alt="Айс Матча Латте" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Matcha Latte</h3>
-                    <p class="description">Muzli sutli matcha latte</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Айс Матча Латте</h3>
+                    <p class="description">Классический матча латте на льду с молоком</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_4.png" alt="Cherry Matcha" class="card-image">
+                <img src="напитки/матча/Вишнёвая матча с рубиновыми слоями-4.png" alt="Вишня Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Vishnya Matcha</h3>
-                    <p class="description">Mazali vishnya bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Вишня Матча</h3>
+                    <p class="description">Вишня с рубиновыми слоями и матча</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_5.png" alt="Bumble Matcha" class="card-image">
+                <img src="напитки/матча/Апельсиновый бамбл с матча-6.png" alt="Бамбл Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Bambul Matcha</h3>
-                    <p class="description">Apelsin sharbatli matcha</p>
-                    <div class="single-price">50 000 so'm</div>
+                    <h3>Бамбл Матча</h3>
+                    <p class="description">Апельсиновый сок с бодрящей матча</p>
+                    <div class="single-price">50 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_6.png" alt="Tonic Matcha" class="card-image">
+                <img src="напитки/матча/Матча-тоник с лаймом на зелёном фоне-5.png" alt="Тоник Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Tonic Matcha</h3>
-                    <p class="description">Limon va tonik bilan</p>
-                    <div class="single-price">50 000 so'm</div>
+                    <h3>Тоник Матча</h3>
+                    <p class="description">С лаймом и газированным тоником</p>
+                    <div class="single-price">50 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_7.png" alt="Matcha Latte" class="card-image">
+                <img src="напитки/матча/Горячий матча-латте с сердцем пенки-7.png" alt="Матча Латте" class="card-image">
                 <div class="card-content">
-                    <h3>Matcha Latte</h3>
-                    <p class="description">Klassik issiq matcha latte</p>
-                    <div class="single-price">30 000 so'm</div>
+                    <h3>Матча Латте</h3>
+                    <p class="description">Классический горячий кремовый матча латте</p>
+                    <div class="single-price">30 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_8.png" alt="Lotus Matcha" class="card-image">
+                <img src="напитки/матча/Матча Лотус с печеньем-8.png" alt="Лотус Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Lotus Matcha</h3>
-                    <p class="description">Lotus pirojni bilan</p>
-                    <div class="single-price">50 000 so'm</div>
+                    <h3>Лотус Матча</h3>
+                    <p class="description">С карамельным печеньем Lotus</p>
+                    <div class="single-price">50 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_9.png" alt="Mint Grapefruit Matcha" class="card-image">
+                <img src="напитки/матча/Слоёный матча с личи и грейпфрутом-9.png" alt="Личи Грейпфрут Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Myat Greyfrut</h3>
-                    <p class="description">Yalpiz va greyfrut bilan</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Личи-Грейпфрут Матча</h3>
+                    <p class="description">Экзотическое сочетание личи и грейпфрута</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_10.png" alt="Banana Penka Matcha" class="card-image">
+                <img src="напитки/матча/Матча с банановой пенкой-10.png" alt="Банановая Пенка Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Bananoviy Penka</h3>
-                    <p class="description">Banan va karamell bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Банановая Пенка Матча</h3>
+                    <p class="description">Нежная банановая пенка с карамелью</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_11.png" alt="Ube Matcha" class="card-image">
+                <img src="напитки/матча/Слоёный убе-матча на зелёном фоне-11.png" alt="Убе Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Ube Matcha</h3>
-                    <p class="description">Filippin yamsi bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Убе Матча</h3>
+                    <p class="description">С филиппинским фиолетовым ямсом</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_12.png" alt="Mont Blanc Matcha" class="card-image">
+                <img src="напитки/матча/Матча Монблан с каштановым кремом-12.png" alt="Монблан Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Mont Blank</h3>
-                    <p class="description">Kastan'ye kremi bilan</p>
-                    <div class="single-price">45 000 so'm</div>
+                    <h3>Монблан Матча</h3>
+                    <p class="description">С французским каштановым кремом</p>
+                    <div class="single-price">45 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_13.png" alt="Grape Peach Matcha" class="card-image">
+                <img src="напитки/матча/Слоёный виноградно-персиковый напиток на зелёном фоне-13.png" alt="Виноград Персик Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Vinograd Persik</h3>
-                    <p class="description">Uzum va shaftoli bilan</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Виноград-Персик Матча</h3>
+                    <p class="description">С ягодами винограда и спелым персиком</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_14.png" alt="Strawberry Grapefruit Matcha" class="card-image">
+                <img src="напитки/матча/Клубнично-грейпфрутовый напиток на светло-зелёном фоне-14.png" alt="Клубника Грейпфрут Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Klubnika Greyfrut</h3>
-                    <p class="description">Klubnika va greyfrut kombinatsiyasi</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Клубника-Грейпфрут Матча</h3>
+                    <p class="description">Сочетание клубники и грейпфрута</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/matcha/matcha_15.png" alt="Mango Passion Matcha" class="card-image">
+                <img src="напитки/матча/Золотой манго-маракуйя на зелёном фоне-15.png" alt="Манго Маракуйя Матча" class="card-image">
                 <div class="card-content">
-                    <h3>Mango Marakuya</h3>
-                    <p class="description">Mango va marakuya bilan</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Манго-Маракуйя Матча</h3>
+                    <p class="description">Тропические фрукты манго и маракуйя</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
         </div>
@@ -330,56 +360,56 @@
     <!-- ===== LEMONADES SECTION ===== -->
     <section class="section reveal" data-category="lemonades">
         <div class="section-header">
-            <h2>🍋 Limonadlar</h2>
-            <p>Salqin va tetiklatuvchi tabiiy limonadlar</p>
+            <h2>🍋 Лимонады</h2>
+            <p>Освежающие и бодрящие натуральные лимонады</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_1.png" alt="Mojito" class="card-image">
+                <img src="напитки/айс ти/Мохито в стакане Lavazza-13.png" alt="Мохито" class="card-image">
                 <div class="card-content">
-                    <h3>Mojito</h3>
-                    <p class="description">Yalpiz va limon bilan klassik mojito</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Мохито</h3>
+                    <p class="description">Классический мохито с мятой и лимоном</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_2.png" alt="Iced Tea" class="card-image">
+                <img src="напитки/айс ти/Айс ти с долькой апельсина-14.png" alt="Айс Ти" class="card-image">
                 <div class="card-content">
-                    <h3>Ays Choy</h3>
-                    <p class="description">Muzli choy limon bilan</p>
-                    <div class="single-price">30 000 so'm</div>
+                    <h3>Айс Ти</h3>
+                    <p class="description">Холодный чай с долькой апельсина</p>
+                    <div class="single-price">30 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_3.png" alt="Tarragon" class="card-image">
+                <img src="напитки/айс ти/Лимонад тархун с лаймом и льдом-15.png" alt="Тархун" class="card-image">
                 <div class="card-content">
-                    <h3>Tarxun</h3>
-                    <p class="description">Tarxun otli maxsus limonad</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Тархун</h3>
+                    <p class="description">Зелёный лимонад с тархуном и лаймом</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_4.png" alt="Duchess" class="card-image">
+                <img src="напитки/айс ти/Лимонад Дюшес с грушей и мятой-16.png" alt="Дюшес" class="card-image">
                 <div class="card-content">
-                    <h3>Dyushes</h3>
-                    <p class="description">Bezovta olcha aromatli</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Дюшес</h3>
+                    <p class="description">Сладкий лимонад с грушей и мятой</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_5.png" alt="Mango Passion" class="card-image">
+                <img src="напитки/айс ти/Лимонад манго-маракуйя со льдом-17.png" alt="Манго Маракуйя" class="card-image">
                 <div class="card-content">
-                    <h3>Mango Marakuya</h3>
-                    <p class="description">Mango va marakuya aralashmasi</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Манго Маракуйя</h3>
+                    <p class="description">Тропический микс манго и маракуйи</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/lemonades/lemonades_6.png" alt="Berry" class="card-image">
+                <img src="напитки/айс ти/Ягодный лимонад Lavazza с ягодами-18.png" alt="Ягодный" class="card-image">
                 <div class="card-content">
-                    <h3>Yagodniy</h3>
-                    <p class="description">Turli mevalar aralashmasi</p>
-                    <div class="single-price">40 000 so'm</div>
+                    <h3>Ягодный</h3>
+                    <p class="description">Смесь различных лесных ягод</p>
+                    <div class="single-price">40 000 сум</div>
                 </div>
             </div>
         </div>
@@ -388,48 +418,48 @@
     <!-- ===== TEA SECTION ===== -->
     <section class="section reveal" data-category="tea">
         <div class="section-header">
-            <h2>🫖 Issiq Choylar</h2>
-            <p>Tinchlanish va issiqlik uchun eng yaxshi tanlov</p>
+            <h2>🫖 Горячий чай</h2>
+            <p>Лучший выбор для отдыха и согревания</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/tea/tea_1.png" alt="Black Tea" class="card-image">
+                <img src="напитки/чай/Чёрный чай Lavazza с бадьяном-19.png" alt="Чёрный чай" class="card-image">
                 <div class="card-content">
-                    <h3>Qora Choy</h3>
-                    <p class="description">Klassik qora choy</p>
-                    <div class="single-price">10 000 so'm</div>
+                    <h3>Чёрный чай</h3>
+                    <p class="description">Ароматный классический чёрный чай с бадьяном</p>
+                    <div class="single-price">10 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/tea/tea_2.png" alt="Berry Tea" class="card-image">
+                <img src="напитки/чай/Ягодный чай в чашке Lavazza-20.png" alt="Ягодный чай" class="card-image">
                 <div class="card-content">
-                    <h3>Yagodniy Choy</h3>
-                    <p class="description">Mevali aromatli choy</p>
-                    <div class="single-price">20 000 so'm</div>
+                    <h3>Ягодный чай</h3>
+                    <p class="description">Ароматный чай с лесными ягодами</p>
+                    <div class="single-price">20 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/tea/tea_3.png" alt="Lemon Tea" class="card-image">
+                <img src="напитки/чай/Лимонный чай Lavazza с долькой лимона-21.png" alt="Лимонный чай" class="card-image">
                 <div class="card-content">
-                    <h3>Limon Choy</h3>
-                    <p class="description">Limon bilan tetiklatuvchi</p>
-                    <div class="single-price">12 000 so'm</div>
+                    <h3>Лимонный чай</h3>
+                    <p class="description">Бодрящий горячий чай с лимоном</p>
+                    <div class="single-price">12 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/tea/tea_4.png" alt="Ginger Tea" class="card-image">
+                <img src="напитки/чай/Имбирный чай в стакане Lavazza-22.png" alt="Имбирный чай" class="card-image">
                 <div class="card-content">
-                    <h3>Zanjabil Choy</h3>
-                    <p class="description">Zanjabil va asal bilan</p>
-                    <div class="single-price">20 000 so'm</div>
+                    <h3>Имбирный чай</h3>
+                    <p class="description">Целебный чай с имбирём и мёдом</p>
+                    <div class="single-price">20 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/tea/tea_5.png" alt="Orange Tea" class="card-image">
+                <img src="напитки/чай/Апельсиновый чай в чашке Lavazza-23.png" alt="Апельсиновый чай" class="card-image">
                 <div class="card-content">
-                    <h3>Apelsin Choy</h3>
-                    <p class="description">Apelsin dadi bilan</p>
-                    <div class="single-price">15 000 so'm</div>
+                    <h3>Апельсиновый чай</h3>
+                    <p class="description">Со свежим апельсиновым вкусом и ароматом</p>
+                    <div class="single-price">15 000 сум</div>
                 </div>
             </div>
         </div>
@@ -438,44 +468,44 @@
     <!-- ===== FRESH JUICES SECTION ===== -->
     <section class="section reveal" data-category="fresh">
         <div class="section-header">
-            <h2>🍊 Tabiiy Freshlar</h2>
-            <p>100% tabiiy mevalar sharbatlari</p>
+            <h2>🍊 Натуральные фреши</h2>
+            <p>100% натуральные свежевыжатые фруктовые соки</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/fresh/fresh_1.png" alt="Orange Fresh" class="card-image">
+                <img src="напитки/фреш/Апельсиновый фреш с долькой апельсина-36.png" alt="Апельсиновый фреш" class="card-image">
                 <div class="card-content">
-                    <h3>Apelsin Fresh</h3>
-                    <p class="description">Yangi squeezed apelsin</p>
-                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">35 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">45 000 so'm</span></div>
+                    <h3>Апельсиновый фреш</h3>
+                    <p class="description">Свежевыжатый солнечный апельсиновый сок</p>
+                    <div class="price-row"><span class="size-label">330 мл</span><span class="price">35 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">45 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/fresh/fresh_2.png" alt="Apple Fresh" class="card-image">
+                <img src="напитки/фреш/Яблочный фреш с зелёным яблоком-37.png" alt="Яблочный фреш" class="card-image">
                 <div class="card-content">
-                    <h3>Olma Fresh</h3>
-                    <p class="description">Yashil olma sharbatli</p>
-                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">20 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">30 000 so'm</span></div>
+                    <h3>Яблочный фреш</h3>
+                    <p class="description">Бодрящий сок из зелёного яблока</p>
+                    <div class="price-row"><span class="size-label">330 мл</span><span class="price">20 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">30 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/fresh/fresh_3.png" alt="Carrot Fresh" class="card-image">
+                <img src="напитки/фреш/Морковный фреш в стакане-38.png" alt="Морковный фреш" class="card-image">
                 <div class="card-content">
-                    <h3>Sabzi Fresh</h3>
-                    <p class="description">Foydali sabzi sharbatli</p>
-                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">15 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">25 000 so'm</span></div>
+                    <h3>Морковный фреш</h3>
+                    <p class="description">Натуральный морковный сок, богатый витаминами</p>
+                    <div class="price-row"><span class="size-label">330 мл</span><span class="price">15 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">25 000 сум</span></div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/fresh/fresh_4.png" alt="Apple Carrot Fresh" class="card-image">
+                <img src="напитки/фреш/Яблочно-морковный фреш с яблоком и морковью-39.png" alt="Яблочно-морковный фреш" class="card-image">
                 <div class="card-content">
-                    <h3>Olma-Sabzi Fresh</h3>
-                    <p class="description">Olva va sabzi aralashmasi</p>
-                    <div class="price-row"><span class="size-label">330 ml</span><span class="price">20 000 so'm</span></div>
-                    <div class="price-row"><span class="size-label">500 ml</span><span class="price">30 000 so'm</span></div>
+                    <h3>Яблочно-морковный фреш</h3>
+                    <p class="description">Идеальный дуэт яблока и моркови</p>
+                    <div class="price-row"><span class="size-label">330 мл</span><span class="price">20 000 сум</span></div>
+                    <div class="price-row"><span class="size-label">500 мл</span><span class="price">30 000 сум</span></div>
                 </div>
             </div>
         </div>
@@ -484,71 +514,59 @@
     <!-- ===== MILK COCKTAILS SECTION ===== -->
     <section class="section reveal" data-category="milk">
         <div class="section-header">
-            <h2>🥤 Milk Cocktail</h2>
-            <p>Mazali va to'yimli sutli kokteyllar</p>
+            <h2>🥤 Молочный коктейль</h2>
+            <p>Вкусные и сытные молочные коктейли</p>
         </div>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="images/milk-cocktails/ChatGPT Image 18 авг. 2026 г., 01_08_31.png" alt="Classic Milkshake" class="card-image">
+                <img src="напитки/молочное коктейл/Классический молочный коктейль Lavazza-24.png" alt="Классический коктейль" class="card-image">
                 <div class="card-content">
-                    <h3>Klassik Milk Cocktail</h3>
-                    <p class="description">Vanil va sutli klassik</p>
-                    <div class="single-price">35 000 so'm</div>
+                    <h3>Классический коктейль</h3>
+                    <p class="description">Нежная классика с ванилью и мороженым</p>
+                    <div class="single-price">35 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/milk-cocktails/milk-cocktails_2.png" alt="Snickers Milkshake" class="card-image">
-                <span class="badge hit">XIT</span>
+                <img src="напитки/молочное коктейл/Молочный коктейль Орео на белом фоне-25.png" alt="Орео коктейль" class="card-image">
                 <div class="card-content">
-                    <h3>Snickers Milk Cocktail</h3>
-                    <p class="description">Snickers shokoladli</p>
-                    <div class="single-price">42 000 so'm</div>
+                    <h3>Орео коктейль</h3>
+                    <p class="description">С печеньем Орео и взбитыми сливками</p>
+                    <div class="single-price">42 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/milk-cocktails/milk-cocktails_3.png" alt="Bounty Milkshake" class="card-image">
+                <img src="напитки/молочное коктейл/Банановый молочный коктейль-26.png" alt="Банановый коктейль" class="card-image">
                 <div class="card-content">
-                    <h3>Bounty Milk Cocktail</h3>
-                    <p class="description">Kokos va shokoladli</p>
-                    <div class="single-price">42 000 so'm</div>
+                    <h3>Банановый коктейль</h3>
+                    <p class="description">Сладкий и сытный коктейль со свежим бананом</p>
+                    <div class="single-price">36 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/milk-cocktails/milk-cocktails_4.png" alt="Raffaello Milkshake" class="card-image">
+                <img src="напитки/молочное коктейл/Молочный коктейль Сникерс-27.png" alt="Сникерс коктейль" class="card-image">
+                <span class="badge hit">ХИТ</span>
                 <div class="card-content">
-                    <h3>Raffaello Milk Cocktail</h3>
-                    <p class="description">Kokos va bodomli</p>
-                    <div class="single-price">42 000 so'm</div>
+                    <h3>Сникерс коктейль</h3>
+                    <p class="description">Шоколад Сникерс, карамель и арахис</p>
+                    <div class="single-price">42 000 сум</div>
                 </div>
             </div>
             <div class="menu-card">
-                <img src="images/milk-cocktails/ChatGPT Image 18 авг. 2026 г., 01_07_39.png" alt="Oreo Milk Cocktail" class="card-image">
+                <img src="напитки/молочное коктейл/Молочный коктейль Баунти на белом фоне-29.png" alt="Баунти коктейль" class="card-image">
                 <div class="card-content">
-                    <h3>Oreo Milk Cocktail</h3>
-                    <p class="description">Oreo pechenelari bilan</p>
-                    <div class="single-price">42 000 so'm</div>
+                    <h3>Баунти коктейль</h3>
+                    <p class="description">Кокос и шоколад — вкус райского наслаждения</p>
+                    <div class="single-price">42 000 сум</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ===== ADDONS SECTION ===== -->
-    <section class="section reveal" data-category="addons">
-        <div class="section-header">
-            <h2>➕ Qo'shimchalar</h2>
-            <p>Ichimliklaringizni yanada mazali qiling</p>
-        </div>
-        <div class="addons-grid">
-            <div class="addon-card"><span class="addon-name">🥛 Sut</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🥛 Laktozasiz sut</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">☁️ Qaymoq</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🍥 Vzbitiye slivki</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🍯 Sirop</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🍯 Asal</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🌿 Yalpiz</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🍋 Limon</span><span class="addon-price">6 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">☕ Espresso</span><span class="addon-price">22 000 so'm</span></div>
-            <div class="addon-card"><span class="addon-name">🍫 Topping</span><span class="addon-price">6 000 so'm</span></div>
+            <div class="menu-card">
+                <img src="напитки/молочное коктейл/Молочный коктейль Рафаэлло-28.png" alt="Рафаэлло коктейль" class="card-image">
+                <div class="card-content">
+                    <h3>Рафаэлло коктейль</h3>
+                    <p class="description">Изысканный вкус кокоса и миндаля</p>
+                    <div class="single-price">42 000 сум</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -556,8 +574,8 @@
     <footer class="footer">
         <img src="images/logo/logo.jpg" alt="Lavazza" class="footer-logo">
         <h3>LAVAZZA COFFEE</h3>
-        <p>Sifat • Mazza • Mamnuniyat</p>
-        <p style="margin-top: 1rem; font-size: 0.8rem;">Ish vaqti: 08:00 - 23:00 | Har kuni</p>
+        <p>Качество • Вкус • Удовольствие</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">Время работы: 08:00 - 23:00 | Каждый день</p>
         <p style="font-size: 0.8rem; margin-top: 0.5rem;">Lavazzacoffee.uz</p>
     </footer>
 
